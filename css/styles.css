@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+
+/*font-family: 'Nunito', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+:root {
+    --fontColor: #0b103a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 8rem 1rem;
+}
+
+nav a {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+nav li a,
+nav h4 {
+    color: var(--fontColor);
+}
+
+.btn-nav {
+    background: #0a3d62;
+    color: #fff;
+    padding: .4rem .5rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: .6rem;
+}
+
+.hero-wrapper {
+    min-height: 100vh;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-grid {
+    display: grid;
+    margin-top: .3rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: .2rem;
+}
+
+.hero-text h1 {
+    color: var(--fontColor);
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.hero-text h1 span {
+    color: #0a3d62;
+}
+
+.hero-text h1+span {
+    color: #505050;
+    font-weight: 500;
+}
+
+.hero-search {
+    display: flex;
+    margin-right: 10rem;
+    margin-top: 3.5rem;
+    background: #ecf0f1;
+    padding: .3rem;
+    border-radius: 30px;
+    border: none;
+}
+
+.hero-search input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    height: 37px;
+    padding: 0rem 1.5rem;
+}
+
+.hero-search button {
+    border-radius: 30px;
+    padding: 0rem 2rem;
+    background: #0a3d62;
+    color: #fff;
+    border: 1px solid #0a3d62;
+}
+
+.numbers-grid {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-right: 10rem;
+    text-align: center;
+}
+
+.numbers-grid h3 {
+    font-weight: 600;
+    color: var(--fontColor);
+}
+
+.footer-bottom {
+    padding: 30px;
+    display: grid;
+    letter-spacing: 1px;
+    margin-left: 9rem;
+    color: #4b6584;
+}
+
+.footer-bottom ion-icon {
+    color: red;
+}
